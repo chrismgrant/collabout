@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collabout</title>
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no" />
+	<!--
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	
+	<script type="text/javascript" src="js/mobile_cookie.js"> </script>
+	<script type="text/javascript" src="js/load.js"> </script>
+	
+	-->
+</head>
+<body>
+	<style>
+		a{ text-decoration:none;}
+		html, body{
+			margin:0;
+			padding:0;
+			background-color:#222;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		}
+		article{
+			width:100%;
+			margin:0 auto;
+		}
+		header{
+			padding:100px 0;
+			background-color:#FFF;
+			border-bottom:1px solid #000;
+			text-align:center;
+		}
+		section{
+			text-align:center;
+			width:600px;
+			margin:0px auto;
+			border-bottom:1px solid #333;
+			padding:30px 0 20px 0;
+			position:relative;
+			top:-90px;
+			
+			color:#FFF;
+			font-size:15px;
+		}
+		p{
+			width:500px;
+			text-align:left;
+			margin:0 auto;
+		}
+		section.main{
+			padding-top:0;
+		}
+		
+		section img{
+			max-width:600px;
+		}
+		img.mobile{
+			vertical-align:text-top;
+			position:relative;
+			margin:0 auto;
+			width:200px;
+		}
+		div.desc{
+			text-align:left;
+			vertical-align:text-top;
+			display:inline-block;
+			width:230px;
+			padding:50px 10px;
+			position:relative;
+			margin:0 auto;
+			color:#FFF;
+			font-size:15px;
+		}
+			div.desc ul{
+				font-size:20px;
+				margin:0;
+				padding:0;
+				padding-left:20px;
+			}
+		h2{
+			font-size:25px;
+			color:#FFF;
+			font-weight:normal;
+		}
+		h3{
+			width:500px;
+			margin:10px auto;
+			font-size:25px;
+			color:#FFF;
+			font-weight:normal;
+			text-align:left;
+		}
+		
+		div.fb_login{
+			cursor:pointer;
+			position:absolute;
+			top:10px;
+			right:10px;
+			display:inline-block;
+			padding:4px 10px;
+			font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+			font-size:13px;
+			color: #FFF;
+			font-weight:bold;
+			background-color:#5C75A9;
+			border:1px solid #1A356E;
+			box-shadow:inset 0 1px 0 #8A9CC2;
+			border-radius:3px;
+		}
+		div.button.big{
+			cursor:pointer;
+			display:inline-block;
+			padding:10px 20px;
+			position:relative;
+			top:0px;
+			font-size:17px;
+			font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+			color: #111;
+			background-color:#CCC;
+			border:1px solid #222;
+			box-shadow:inset 0 1px 0 #FFF;
+			border-radius:3px;
+			
+		}
+		div.fb_login.big{
+			font-weight:normal;
+			padding:10px 20px;
+			position:relative;
+			top:0px;
+			font-size:17px;
+		}
+		.big{
+			width:120px;
+			text-align:center;
+		}
+		.mobile{display:none;}
+		@media all and (max-width: 600px) {
+			.mobile{display:block;}
+			.desktop{display:none;}
+			section, p{
+				top:0;
+				width:300px;
+			}
+			p{ margin-bottom:20px;}
+			.big{
+				left:1px;
+				position:relative;
+				width:100px;
+			}
+			header{
+				padding:60px 0;
+			}
+		}
+		
+		
+	</style>
+	
+	<a href="event.php">
+	<div class="fb_login">
+		Log In
+	</div>
+	</a>
+	<article>
+		<header>
+			<img src="img/CollaboutThumb.png" height="50px">
+		</header>
+		<section class="main">
+			<img src="img/desktopsite.png" class="desktop">
+			<h2 class="desktop">
+				Getting organized has never been this much fun.
+			</h2>
+			<h2 class="mobile">
+				Easily organize anything from your smartphone.
+			</h2>
+			<a href="event.php">
+			<div class="fb_login big">
+				Sign me up
+			</div>
+			</a>
+			<div class="button big">
+				Learn more
+			</div>
+		</section>
+		<section class="mobile">
+			<p>	We love our smartphones, and we hate
+				how they're often treated as second class
+				citizens. 
+			</p>
+			<p> That's why we sweat the details on 
+				Collabout's smartphone interface so
+				you can can always get to your data
+				without compromise.
+			</p>
+			<p> We think you're going to love it. </p>
+		</section>
+		<section class="mobile">
+			<h2><3</h2>
+			<img src="img/groceries.png" class="mobile">
+		</section>
+		<!--
+		<section>
+			<h3> Describe what you're doing.</h3>
+			<h3> Send a link to anyone who's involved.</h3>
+			<h3> Use polls to make decisions,</h3>
+		</section>
+		<section>
+			<h2>Smartphones love Collabout</h2>
+			<img src="img/groceries.png" class="iphone">
+			<img src="img/dinner.png" class="iphone">
+			<img src="img/work.png" class="iphone">
+		</section>
+		-->
+	</article>
+	
+	<!--
+	<top>
+		<img src="img/CollaboutLong.png" height="50px">
+		    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=245817542121380
+";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-login-button" data-show-faces="false" data-width="200" data-max-rows="1"></div>	</top>
+	<container>
+		<img src="img/CollaboutThumb.png" height="400px">
+		<div class="subtext"> ollaborate </div>
+	</container>
+	<bottom>
+		<ul class="submenu">
+			<li>Collabout - 2011 CMU FB Hackathon</li>
+			<li class="selected">Homepage</li>
+			<li>About</li>
+			<li>Help</li>
+			<li>Contact</li>
+		</ul>
+	</bottom>
+	-->
+</body>
+</html>

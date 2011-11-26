@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Collabout<>/title>
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
+	
+	<script type="text/javascript" src="js/mobile_cookie.js"> </script>
+	<script type="text/javascript" src="js/load.js"> </script>
+</head>
+<body onload="loadjs(); return false;">
+	<aside>
+		<ul class="projects">
+			<li>Dinner Tonight</li>
+			<li class="selected">Facebook Hackathon</li>
+			<li>Grocery Run</li>
+			<li>CMU APIs</li>
+			<li>+ Create</li>
+		</ul>
+	</aside>
+	<div id="main">
+		<section>
+			<h1>What are you organizing?</h1>
+			<input id="new_event_name" type="text" class="focus" placeholder="Group/Event/Excursion Name">
+			<input id="new_event_desc" type="text" placeholder="Short Description">
+			<br />
+			<a class="button" onclick="create_event(event)">Create</a>
+		</section>
+		<section>
+			<p>Just hit that nice big "Create" button.</p>
+		</section>
+		<!--
+		<header>
+			<h1>	Facebook Hackathon</h1>
+			<p>		We need to get together to talk about<br /> 
+					what we want to build for the upcoming hackathon.
+			</p>
+		</header>
+		-->
+		<!--
+		<section>
+			<div class="summary">
+				<h2>When</h2>
+			</div>
+			<form>
+				<ul class="poll">
+					<li>
+						<span class="percentage" style="width:15%"></span>
+						<span class="checkbox"></span>	
+						Sunday 4pm</li>
+					<li class="selected">
+						<span class="percentage" style="width:60%"></span>
+						<span class="checkbox"></span>	
+						Sunday 5pm</li>
+					<li>
+						<span class="percentage" style="width:25%"></span>
+						<span class="checkbox"></span>	
+						Sunday 6pm</li>
+					<input placeholder="Add item" class="new_item" type="text" onblur="add(event)" onkeypress="return catch_submit(event)" >
+				</ul>
+			</form>
+			
+		</section>
+		<section>
+			<div class="summary">
+				<h2>Where</h2>
+			</div>
+			<form>
+				<ul>
+					<li>
+						<span class="percentage" style="width:100%"></span>
+						<span class="checkbox"></span>Gates 4405</li>
+					<input placeholder="Add item" class="new_item" type="text" onkeypress="return catch_submit(event)" >
+				</ul>
+			</form>
+			
+		</section>
+		<section>
+			<div class="summary">
+				<h2>Agenda</h2>
+				<a class="button">Clear Completed</a>
+			</div>
+			<form>
+				<ul class="checklist">
+					<li class="selected"><span class="checkbox"></span>Choose team members</li>
+					<li class="selected"><span class="checkbox"></span>Develop Concept</li>
+					<li><span class="checkbox"></span>Purchase Domain</li>
+					<li class="selected"><span class="checkbox"></span>Build Framework</li>
+					<li><span class="checkbox"></span>Demo at Hackathon </li>
+					<input placeholder="Add item" class="new_item" type="text" onkeypress="return catch_submit(event)" >
+				</ul>
+			</form>
+			
+		</section>
+		-->
+		<!--
+		<section>
+			<a class="button" onclick="newpoll(event)">New Poll</a>
+			<a class="button" onclick="newlist(event)">New List</a>
+		</section>
+		-->
+		<!--
+		<section>
+		<div id="fb-root"></div>
+		
+		<div class="fb-comments" data-href="example.com" data-num-posts="3" data-width="300"></div>
+		</section>
+		-->
+	</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+Events
+- Event ID 
+- Title
+- Description
+- Created On
+- Group
+
+CREATE TABLE  `collabout`.`events` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`Title` VARCHAR( 200 ) NOT NULL ,
+`Description` VARCHAR( 200 ) NOT NULL ,
+`Date` DATE NOT NULL ,
+`Group` INT NOT NULL
+) ENGINE = MYISAM ;
+
+
+INSERT INTO `collabout`.`events` (`ID`, `Title`, `Description`, `Date`, `Group`) VALUES (NULL, 'Hackathon', 'Collaboration for FB Hackathon attendees', '', '1');
+
+
+------------------------------------------
+
+EventID_Poll
+- Respond ID
+- Responder ID 
+- Question
+- Response 
+
+CREATE TABLE  `collabout`.`EventID_Poll` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`Responder` INT NOT NULL ,
+`Question` VARCHAR( 500 ) NOT NULL ,
+`Response` VARCHAR( 200 ) NOT NULL
+) ENGINE = MYISAM ;
+
+
+INSERT INTO  `collabout`.`EventID_Poll` (
+`ID` ,
+`Responder` ,
+`Question` ,
+`Response`
+)
+VALUES (
+NULL ,  '1',  'What time?',  '5 PM'
+);
+
+
+------------------------------------------
+
+EventID_List
+- Item ID
+- List Name
+- Adder
+- Item
+- Status
+
+CREATE TABLE  `collabout`.`EventID_List` (
+`ID` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`List` VARCHAR( 200 ) NOT NULL ,
+`AddedBy` INT NOT NULL ,
+`Item` VARCHAR( 400 ) NOT NULL ,
+`Status` BOOL NOT NULL
+) ENGINE = MYISAM ;
+
+
+INSERT INTO `collabout`.`1_List` (`ID`, `List`, `AddedBy`, `Item`, `Status`) VALUES (NULL, 'Back-End Stuff', 'Ilteris', 'Build the whole thing with PHP.', 1);
+
+
+------------------------------------------
+
+Groups
+- ID
+- Name
+- Member
+- MemberID
+
+CREATE TABLE  `collabout`.`Groups` (
+`ID` INT NOT NULL ,
+`Name` VARCHAR( 200 ) NOT NULL ,
+`Member` VARCHAR( 200 ) NOT NULL ,
+`MemberID` INT NOT NULL
+) ENGINE = MYISAM ;
+
+INSERT INTO `collabout`.`Groups` (`ID`, `Name`, `Member`, `MemberID`) VALUES ('1', 'Hackathon', 'Ilter Canberk', '1');
+
+
+------------------------------------------

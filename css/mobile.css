@@ -1,0 +1,78 @@
+aside{
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	padding:0;
+}
+ul.projects{
+	top:0;
+}
+
+header, section, form{
+	margin:10px auto;
+}
+
+input.new_item, input[type=text]{
+	width:290px;
+}
+
+
+div#main{
+	background-color:#FFF;
+	position:relative;
+	top:0;
+	left:0;
+	min-height:500px;
+	padding:0;
+	width:100%;
+}
+div#main header{
+	position:relative;
+	margin-top:0px;	
+}
+div#main header h1{
+	font-family: Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	display:block;
+	font-size:20px;
+}
+div#main header p{
+	position:relative;
+	top:-20px;
+	display:block;
+	font-size:15px;
+}
+section{
+	width:300px;
+	min-height:30px;
+	margin:10px auto;
+	padding:10px 0;
+	border-bottom:1px solid #EEE;
+}
+section div.summary{
+	display:block;
+}
+section div.summary h2{
+	font-family: Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+	text-transform:uppercase;
+	margin-bottom:0px;
+	font-size:20px;
+	display:inline-block;
+}
+section div.summary a.button{
+	position:absolute;
+	top:10px;
+	right:0;
+	width:100px;
+	padding:5px 0;
+	vertical-align:text-top;
+	font-size:10px;
+	display:inline-block;
+	background-color:#F0F0F0;
+	border:1px solid #CCC;
+	color:#888;
+	text-shadow:none;
+}
+form{
+	width:300px;
+}
